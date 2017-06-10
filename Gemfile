@@ -18,6 +18,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 gem 'jquery-rails'
 gem 'uglifier', '>= 1.3.0'
+gem 'devise_zxcvbn'
+#gem 'delayed_job_active_record', '~> 4.1', '>= 4.1.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'devise', '~> 4.3'

@@ -122,7 +122,7 @@ Devise.setup do |config|
   # able to access the website for two days without confirming their account,
   # access will be blocked just in the third day. Default is 0.days, meaning
   # the user cannot access the website without confirming their account.
-  config.allow_unconfirmed_access_for = 2.days
+  #config.allow_unconfirmed_access_for = 0.days
 
   # A period that the user is allowed to confirm their account before their
   # token becomes invalid. For example, if set to 3.days, the user can confirm
@@ -158,6 +158,7 @@ Devise.setup do |config|
   # ==> Configuration for :validatable
   # Range for password length.
   config.password_length = 8..128
+  config.min_password_score = 2
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
@@ -187,7 +188,7 @@ Devise.setup do |config|
 
   # Number of authentication tries before locking an account if lock_strategy
   # is failed attempts.
-  config.maximum_attempts = 10
+  config.maximum_attempts = 6
 
   # Time interval to unlock the account if :time is enabled as unlock_strategy.
   config.unlock_in = 1.hour
@@ -207,7 +208,7 @@ Devise.setup do |config|
 
   # When set to false, does not sign a user in automatically after their password is
   # reset. Defaults to true, so a user is signed in automatically after a reset.
-  config.sign_in_after_reset_password = true
+  config.sign_in_after_reset_password = false
 
   # ==> Configuration for :encryptable
   # Allow you to use another hashing or encryption algorithm besides bcrypt (default).
