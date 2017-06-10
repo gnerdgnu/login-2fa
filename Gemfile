@@ -18,7 +18,10 @@ gem 'sass-rails', '~> 5.0'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 gem 'jquery-rails'
 gem 'uglifier', '>= 1.3.0'
-gem 'devise_zxcvbn'
+gem 'devise_zxcvbn' # pwd strength logic
+gem 'simple_form' # form logic
+gem 'devise-two-factor' # for two factor
+gem 'rqrcode_png' # for qr codes
 #gem 'delayed_job_active_record', '~> 4.1', '>= 4.1.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
